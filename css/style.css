@@ -1,0 +1,218 @@
+body {
+  background: url('../images/background.png') repeat;
+  font-family: 'WeDrive';
+  font-size: 1em;
+  margin: auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Header */
+header img {
+  display: none;
+}
+header nav {
+  background-color: rgb(245, 245, 243);
+  font-family: 'Drive';
+  font-size: 0.8em;
+  font-weight:400;
+  text-transform: uppercase;
+}
+
+/*Gestion de la NAV*/
+.nav{
+  display: block;
+}
+.nav-link{
+  color: rgb(99, 87, 86)
+}
+.active{
+  background-color: rgb(99, 87, 86);
+}
+.active>.nav-link{
+  color: white;
+}
+
+/*Gestion d'un bloc article :*/
+article {
+  margin: 3em auto 0;
+  max-width: 850px;
+  position: relative;
+  width: 100%;
+}
+
+.article-containt-main {
+  background-color: white;
+  position: relative;
+}
+.article-date {
+  color: rgba(119, 108, 108, 0.8);
+  font-size: 0.8em;
+  padding: 0.5em 1em;
+  right: 0.5em;
+  text-align: right;
+  text-transform: uppercase;
+}
+.article-title {
+  color: #5A4A4A;
+  font-family: 'Drive';
+  font-size: 1.5em;
+  font-weight: 800;
+  padding: 1em 0.5em 0.5em 0.5em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.article-text {
+  color: rgba(119, 108, 108, 0.8);
+  font-size: 0.8em;
+  line-height: 1.5em;
+  padding: 0.5em;
+  text-align: left;
+}
+.article-footer{
+  bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+.article-category-list{
+  display: inline-block;
+}
+.article-category{
+  background-color: rgb(249, 248, 248);
+  color: rgba(119, 108, 108, 0.8);
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0.3em;
+  text-transform: uppercase;
+}
+.article-socials{
+  display: inline-block;
+}
+.article-socials-img{
+  background-color: rgb(224, 221, 221);
+  border-radius: 50%;
+}
+.article-img-border{
+  height: 11px;
+  width: 100%;
+}
+.blue{
+  background: center url('../images/blue-triangle.png');
+}
+.pink{
+  background-image: url('../images/pink-triangle.png');
+}
+
+/*Form*/
+form button {
+  color : white;
+  background-color: rgb(167, 159, 157);
+  border: none;
+  border-radius: 2px;
+  font-family: 'Drive';
+  margin: 4em 0.3em;
+  padding: 0.7em 1em;
+  text-transform: uppercase;
+}
+form button:focus, form button:hover {
+  background-color: rgb(90, 74, 74);
+}
+
+/*Footer*/
+footer{
+  border-top: solid 1px rgb(167, 159, 157);
+  margin: auto;
+  max-width: 850px;
+  width: 100%;
+}
+#copyright{
+  color: rgb(167, 159, 157);
+  display: inline-block;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  text-align: right;
+}
+#copyright strong{
+  color: rgb(90, 74, 74);
+  font-weight: 300;
+}
+#nav-footer nav ul li{
+  display: inline-block;
+  margin: 0.7em 0.3em 0;
+}
+#nav-footer nav ul li a{
+  color: rgb(167, 159, 157);
+  font-size: 0.6em;
+}
+
+@media (min-width: 576px) {
+  header img{
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .nav{
+    display: flex;
+    margin-top: 1.5em;
+  }
+  article{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .article-containt-img{
+    display: inline-block;
+    width: 33%;
+  }
+  .article-img{
+    height: 100%;
+    width: 100%;
+  }
+  .article-containt-main{
+    display: inline-block;
+    width: 67%;
+    padding: 1.5em;
+  }
+  footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  #copyright strong{
+    font-weight: 600;
+  }
+  #nav-footer nav ul li{
+    margin: auto;
+  }
+  #nav-footer nav ul li a{
+    color: rgb(90, 74, 74);
+    font-size: 0.8em;
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  header img {
+    left: 5em;
+    position: absolute;
+    top: 0;
+  }
+  header nav{
+    background-color : transparent;
+  }
+  .nav-link{
+    background-color: rgb(245, 245, 243);
+    margin: 1.5em 0.5em;
+  }
+  .active{
+    background-color: transparent;
+  }
+  .active>.nav-link{
+    background-color: rgb(99, 87, 86);
+  }
+  .article-footer{
+    position: absolute;
+    width: 95%;
+  }
+}
