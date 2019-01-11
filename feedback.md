@@ -13,12 +13,16 @@
 - [x] Création d'un élément `<nav>` pour la sémantique
 - [x] Organisation des liens dans une liste (1x `<ul>` et 5x `<li>`)
 - [x] Classe CSS spécifique pour le lien "actif"
-- [ ] Utilisation de la pseudo-classe `:hover` pour le survol
+- [x] Utilisation de la pseudo-classe `:hover` pour le survol
 
 ### Commentaires
 
 - Il fallait bien penser à faire un effet lors du survol avec la souris (`:hover`)
 - Graphiquement, la partie "Menu" ne colle pas parfaitement à la créa fournie
+
+### Corrections
+
+- Ajout de l'utilisation de la pseudo-classe `:hover`
 
 ## Test Articles
 
@@ -41,10 +45,10 @@
 - [x] Utilisation de `flex` pour afficher l'image de gauche en `stretch`
 - [x] Design du bouton "catégorie" (background, uppercase)
 - [x] Design du bouton "réseaux sociaux" (border-radius, background)
-- [ ] Utilisation de la pseudo-classe `:hover` pour le survol
-- [ ] Utilisation de `flex` en direction `column` + `space-between` pour positionner la date, le texte et les liens en bas, sinon avec des `position:absolute;`
+- [x] Utilisation de la pseudo-classe `:hover` pour le survol
+- [x] Utilisation de `flex` en direction `column` + `space-between` pour positionner la date, le texte et les liens en bas, sinon avec des `position:absolute;`
 - [x] Triangle rose ou bleu avec la pseudo-classe `:nth-child(even)` pour les "pairs" et `:nth-child(odd)` pour les "impairs", sinon, avec 2 classes CSS
-- [ ] Ombre avec la propriété `box-shadow`
+- [x] Ombre avec la propriété `box-shadow`
 
 ### Commentaires
 
@@ -53,6 +57,12 @@
 - Pour être certain que la date soit en haut, le texte au milieu et les liens en bas, le plus simple est d'afficher en `flex` et de changer la direction en `column`. Peu importe la longueur du date, le résultat sera toujours correct
 - Tu n'as pas dû voir l'ombre sur l'article :/
 - Sinon RAS :ok_hand:
+
+### Corrections
+
+- Ajout de l'utilisation de la pseudo-classe `:hover` pour les catégories
+- Utilisation de `flex` et `flex-direction: column` dans le container de l'article.
+- Ajout du `box-shadow`, lors de l'évalution je n'avais pas fait attention à ce détail.
 
 ## Test Gabarit
 
@@ -119,9 +129,9 @@
 - [x] Utilisation de 3 breakpoints ou plus (`@media (min-width:768px) { ... }`)
 - [x] Définition des propriétés CSS en "Mobile First"
 - [x] Optimisation de l'affichage pour mobile
-- [ ] Optimisation de l'affichage pour tablet
+- [x] Optimisation de l'affichage pour tablet
 - [x] Optimisation de l'affichage pour desktop
-- [ ] Menu burger en mobile
+- [x] Menu burger en mobile
 
 ### Commentaires
 
@@ -132,18 +142,28 @@
 - En mode "mobile", on va d'abord afficher les liens du footer, puis, en dessous, le copyright
 - Sinon RAS :ok_hand:
 
+### Correction
+
+- Ajout du menu "Burger" avec Bootstrap pour le mode "mobile"
+- Modification de la taille tablette qui était mal renseigné
+
 ## Général
 
 - [x] Utilisation de balises HTML avec valeur sémantique
 - [x] Précision des ciblages/selectors
-- [ ] Utilisation de préfixes (compatibilité avec anciens navigateurs)
+- [x] Utilisation de préfixes (compatibilité avec anciens navigateurs)
 - Qualité du code
   - [x] indentation et lisibilité du code
   - [x] Présence de commentaires dans le code
 - Options
-  - [ ] Utilisation de transformations / animations
+  - [x] Utilisation de transformations / animations
 
 ### Commentaires
 
 - Très bonne évaluation, bravo :clap:
 - Ok, tu n'as pas tout réalisé, mais ça ressemble globalement à la créa. Si tu as le temps, essaie de terminer cette éval avec les indications de ce feedback
+
+### Correction
+
+- Mise en place d'une rotation du logo sur `:hover`
+- Utilisation de préfixes pour différent navigateurs ainsi que pour les anciennes versions
