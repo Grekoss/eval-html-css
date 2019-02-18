@@ -1,3 +1,6 @@
+# Feedback disponible
+Une branch "original" a été crée sans les modifications suite au Feedback du professeur.
+
 # Un blog tout en couleur
 
 ## Intégration HTML / CSS
