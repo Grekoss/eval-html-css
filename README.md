@@ -1,9 +1,6 @@
 # Feedback disponible
 Une branch "original" a été crée sans les modifications suite au Feedback du professeur.
 
-# Site disponible:
-<http://html-css.cedricpourrias.com>
-
 # Un blog tout en couleur
 
 ## Intégration HTML / CSS
